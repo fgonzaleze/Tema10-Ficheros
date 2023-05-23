@@ -16,14 +16,17 @@ public class Ejercicio01 {
 		 */
 	
 	public static void main(String[] args) {
-	
+		// Variable suma donde contendrá la suma de los numros reales
 		double suma = 0;
+		// Variable con la media de los numeros reales
 		double media;
+		// Variable con un contador para las veces de que se pasa
 		int contador = 0;
 		
 		try {
 			Scanner sc = new Scanner(new FileReader("src\\ejercicios\\NumerosReales"));
 			
+			// Bucle while mientras tenga double
 			while(sc.hasNextDouble()) {
 				suma += sc.nextDouble();
 				contador++;
