@@ -128,7 +128,7 @@ public class Ejercicio07 {
 				System.out.println(nombre + ": " + contactos.get(nombre));
 				// Sino, el nombre no está en la agenda
 			} else {
-				System.out.println("El nombre que buscar no tiene ningun numero registrado.");
+				System.out.println("El nombre no existe en la agenda");
 			}
 
 		}
