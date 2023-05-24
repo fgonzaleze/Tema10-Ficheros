@@ -24,16 +24,20 @@ public class Ejercicio02 {
 
 		try {
 			Scanner sc = new Scanner(new FileReader("src\\ejercicios\\Enteros"));
-
+			
+			// Mientras el bucle siga encontrando numeros double los va a ir sumando y añadiendo al contador
 			while (sc.hasNextDouble()) {
 				suma += sc.nextDouble();
 				contador++;
 			}
+			// La media será la suma entre las veces que haya pasado por el contador 
 			media = suma / contador;
 			System.out.println("Suma: " + suma);
 			System.out.println("Media: " + media);
 			
+			// Cerramos el escaner
 			sc.close();
+		// Escepcion si no encontramos el fichero
 		} catch (FileNotFoundException e) {
 			System.err.println("No se ha encontrado el fichero");
 		}

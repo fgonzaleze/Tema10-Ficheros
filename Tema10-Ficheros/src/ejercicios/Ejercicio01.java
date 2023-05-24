@@ -32,12 +32,15 @@ public class Ejercicio01 {
 				contador++;
 			}
 			
+			// La media será la suma de los numeros entre las veces que haya pasado por el contador
 			media = suma / contador;
 			
 			System.out.println("Suma: " + suma);
 			System.out.println("Media: " + media);
 			
+			// Cerramos escáner
 			sc.close();
+		
 		} catch (FileNotFoundException e) {
 			System.out.println("No se ha encontrado el fichero");
 			e.getMessage();

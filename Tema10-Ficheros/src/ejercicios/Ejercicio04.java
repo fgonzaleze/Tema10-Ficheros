@@ -13,12 +13,18 @@ public class Ejercicio04 {
 	 */
 
 	public static void main(String[] args) {
+		
+		// variable para recoger el texto que se escriba por consola
 		String texto = "";
+		// Declaramos el bw a null
 		BufferedWriter bw = null; 
-
+		// Guardamos la ruta del fichero para una mejor organización
+		String fichero = "src\\ejercicios\\Ejercicio4Texto";
+		// Abrimos el escaner
+		Scanner sc = new Scanner(System.in);
+		
 		try {
-			bw = new BufferedWriter(new FileWriter("src\\ejercicios\\Ejercicio4Texto")); 
-			Scanner sc = new Scanner(System.in);
+			bw = new BufferedWriter(new FileWriter(fichero)); 
 			System.out.println("Introduzca unas líneas de texto: ");
 			texto = sc.nextLine();
 
